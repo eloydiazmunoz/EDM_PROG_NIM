@@ -30,12 +30,12 @@ int main() {
         int muntanya, pedres_a_retirar;
 
         // Demana al jugador que triï una muntanya
-        cout << "És el teu torn - Tria una muntanya (1, 2, 3): ";
+        cout << "Es el teu torn - Tria una muntanya (1, 2, 3): ";
         cin >> muntanya;
 
         // Verifica la validesa del moviment del jugador
         if (muntanya < 1 || muntanya > 3 || pedres[muntanya - 1] == 0) {
-            cout << "Moviment invàlid! Torna-ho a provar." << endl;
+            cout << "Moviment invalid! Torna-ho a provar." << endl;
             continue;
         }
 
@@ -45,7 +45,7 @@ int main() {
 
         // Verifica la validesa del nombre de pedres a retirar
         if (pedres_a_retirar < 1 || pedres_a_retirar > 3 || pedres_a_retirar > pedres[muntanya - 1]) {
-            cout << "Moviment no vàlid. Torna-ho a provar: " << endl;
+            cout << "Moviment no valid. Torna-ho a provar: " << endl;
             continue;
         }
 
